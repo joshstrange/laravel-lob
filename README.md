@@ -8,12 +8,12 @@ Installation
 To use, simply install the package via Composer and then add the following to your app/config/app.php to the service providers array:
 
 ```php
-'Upwebdesign\Lob\LobServiceProvider',
+Upwebdesign\Lob\LobServiceProvider::class
 ```
 
 Then add to the aliases array the following:
 ```php
-'Lob' => 'Upwebdesign\Lob\Facade',
+'Lob' => Upwebdesign\Lob\Facade::class,
 ```
 
 Publish config file via `php artisan config:publish upwebdesign/laravel-lob`.
